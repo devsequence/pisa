@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	@@include('./includes/_head.html')
+	<link rel="stylesheet" href="../static/css/slick.css">
+</head>
+<body>
+<!--page-wrapper-->
+<div class="page-wrapper">
+	@@include('./includes/_header.html')
+	<div class="page-content">
+		<section class="page-top" style="background-image: url('../static/images/general/top-img.jpg')">
+			<div class="container">
+				<div class="bread-crumbs">
+					<ul>
+						<li><a href="#"><svg class="icon"><use xlink:href="#ic-home"></use></svg> Startseite</a></li>
+						<li>Das Management </li>
+					</ul>
+				</div>
+				<div class="title-page">
+					Das Management
+				</div>
+			</div>
+		</section>
+		<section class="management-wrapper">
+			<div class="container">
+				<div class="management"></div>
+			</div>
+		</section>
+	</div>
+	@@include('./includes/_footer.html')
+</div>
+<!--end-page-wrapper-->
+<div class="hidden">
+    @@include('./includes/symbol/icons.html')
+</div>
+@@include('./includes/_scripts.html')
+</body>
+</html>
