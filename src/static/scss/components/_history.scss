@@ -9,11 +9,15 @@
       max-width: 37rem;
     }
   }
+
   &__media{
     width: 50%;
+
     img{
       display: inline-block;
       margin-bottom: 1rem;
+      max-width:100%;
+      height:auto;
     }
   }
   &__title{
@@ -80,4 +84,10 @@
 }
 .banner-history{
   margin-bottom: 8rem;
+  width: 100%;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }

@@ -23,17 +23,85 @@
 			</div>
 		</section>
 		<section class="map-wrapper">
+			<div class="map-item" id="map"></div>
 			<div class="container">
-				<div class="map"></div>
+				<div class="map-info">
+					<div class="title-section">Kontaktdetails</div>
+					<div class="contact-info__item">
+						<svg class="icon">
+							<use xlink:href="#ic-pin"></use>
+						</svg>
+						<div class="contact-info__title">
+							Adresse
+						</div>
+						<div class="contact-info__desc">
+							Kurfürstendamm 193d, 10707 Berlin
+						</div>
+					</div>
+					<div class="contact-info__item">
+						<svg class="icon">
+							<use xlink:href="#ic-phone"></use>
+						</svg>
+						<div class="contact-info__title">
+							Telefon
+						</div>
+						<div class="contact-info__desc">
+							<a href="tel:+4903013898366" target="_blank">+49 (0)30 13 89 83 66</a>
+						</div>
+					</div>
+					<div class="contact-info__item">
+						<svg class="icon">
+							<use xlink:href="#ic-email"></use>
+						</svg>
+						<div class="contact-info__title">
+							Email
+						</div>
+						<div class="contact-info__desc">
+							<a href="mailto:info@pisa.de" target="_blank">info@pisa.de</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<section class="map-desc">
+			<div class="container">
+				<div class="map-desc__item">
+					<div class="map-desc__title">Flughafen</div>
+					<div class="map-desc__desc">Berlin Brandenburg International (BER), ca. 30 Minuten mit dem Taxi.</div>
+				</div>
+				<div class="map-desc__item">
+					<div class="map-desc__title">U-Bahn (U1, U7, U9)</div>
+					<div class="map-desc__desc">U-Bhf Kurfürstndamm, Uhlandstr. Adenauerplatz. </div>
+				</div>
+				<div class="map-desc__item">
+					<div class="map-desc__title">Bahn</div>
+					<div class="map-desc__desc">
+						Hauptbahnhof : ca. 20 Minuten mit dem Taxi. <br>
+						Bahnhof ZOO   : ca. 5 Minuten mit dem Taxi.
+					</div>
+				</div>
+				<div class="map-desc__item">
+					<div class="map-desc__title">Bus</div>
+					<div class="map-desc__desc">101, 109, 110, M19, M29, X10 Haltestelle Olivaerplatz.</div>
+				</div>
 			</div>
 		</section>
 	</div>
 	@@include('./includes/_footer.html')
 </div>
 <!--end-page-wrapper-->
+
 <div class="hidden">
     @@include('./includes/symbol/icons.html')
 </div>
+<script>
+	const activePin = '../static/images/general/pin.svg';
+	const myLatLng = { lat: 52.50110916664893, lng: 13.317891456087409 };
+	const mycenter = { lat: 52.50600454752609, lng: 13.3183657364918 };
+	const contentString = '<div id="content"> Kurfürstendamm 193d, 10707 Berlin </div> ';
+</script>
 @@include('./includes/_scripts.html')
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl7THpWflv0u70jhfuU4T6KbuNy0fuxME&callback=mapInitialize&v=weekly" async ></script>
 </body>
 </html>

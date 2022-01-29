@@ -1,9 +1,27 @@
 .page-top{
   width: 100%;
+  background-color: rgba($secondary-100, .4);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   padding: 13rem 0 8rem;
+  position: relative;
+  overflow: hidden;
+  &:before, &:after{
+    position: absolute;
+    content: '';
+    width: 15rem;
+    height: 15rem;
+    background: rgba($white, .05);
+  }
+  &:before{
+    right: 22.5rem;
+    bottom: 11rem;
+  }
+  &:after{
+    right: 5.5rem;
+    bottom: -6rem;
+  }
 }
 .bread-crumbs{
   margin-bottom: 4rem;
