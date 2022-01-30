@@ -609,6 +609,8 @@ input, textarea {
   .hero-wrapper:after {
     position: absolute;
     content: '';
+    width: 100%;
+    height: 100%;
     top: -15rem;
     left: 0;
     z-index: 2;
@@ -696,7 +698,7 @@ input, textarea {
     color: #ffffff; }
 
 .nav-hero__slider {
-  position: fixed;
+  position: absolute;
   display: flex;
   z-index: 10;
   bottom: 3.13vw;
@@ -1417,7 +1419,7 @@ input, textarea {
     font-size: 4.29vw;
     line-height: 6.43vw; }
   .nav-hero__slider {
-    bottom: 10.71vw;
+    bottom: 3.57vw;
     right: 5.36vw; }
     .nav-hero__slider .prev-slide:before,
     .nav-hero__slider .next-slide:before {
